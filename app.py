@@ -68,6 +68,7 @@ def main():
     if st.checkbox("Correlation Plot by Seaborn"):
         st.write(sns.heatmap(df.corr(), annot=True))
         st.pyplot()
+        st.set_option('deprecation.showPyplotGlobalUse', False)
 
     if st.checkbox("Pie Plot"):
         all_columns_names       = df.columns.tolist()
