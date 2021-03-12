@@ -40,7 +40,7 @@ def main():
 
 
     
-    st.subheader( city + ' - ' + indicator)
+    
     #drawing first chat
     
     st.area_chart(df[['TOT_P','TOT_M','TOT_F']], use_container_width = False, width = 800)
@@ -65,6 +65,8 @@ def main():
         new_df              =   df[selected_columns]
         st.dataframe(new_df)
 
+
+    st.subheader( city + ' - ' + indicator)
     # Plot and visualization
     
     #st.subheader("Data Visualization")
